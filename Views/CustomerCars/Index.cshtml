@@ -1,0 +1,49 @@
+﻿@model IEnumerable<SBurkeMIS4200.Models.CustomerCar>
+
+@{
+    ViewBag.Title = "Customer Index";
+}
+
+<h2>Customer Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover">
+    <tr>
+        <th>
+            Customer Name
+        </th>
+        <th>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.customerCarPhone) <p><span class="glyphicon glyphicon-earphone"></span></p>
+        </th>
+        <th>
+            Address
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.customerFullName)
+        </td>
+        <td>
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.customerCarPhone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.address)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.customerCarId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.customerCarId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.customerCarId })
+        </td>
+    </tr>
+}
+
+</table>

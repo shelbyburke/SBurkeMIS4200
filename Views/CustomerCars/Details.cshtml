@@ -1,0 +1,54 @@
+﻿@model SBurkeMIS4200.Models.CustomerCar
+
+@{
+    ViewBag.Title = " Customer Details";
+}
+
+<h2>Customer Details for Car</h2>
+
+<div>
+    <h4>CustomerCar</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.customerCarFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customerCarFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customerCarLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customerCarLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.customerCarPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.customerCarPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.address)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="alert alert-info">
+    <strong>Changing the details of the Customer can be done with the edit function below</strong>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.customerCarId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

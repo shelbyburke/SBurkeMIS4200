@@ -1,0 +1,70 @@
+﻿@model SBurkeMIS4200.Models.Salesperson
+
+@{
+    ViewBag.Title = "Delete Salesperson";
+}
+
+<h2>Delete Salesperson</h2>
+
+<h3>Are you sure you want to delete this?</h3><p><span class="glyphicon glyphicon-exclamation-sign"></span></p>
+<div>
+    <h4>Salesperson</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonAddress)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-danger" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+        <div
+
+  <div class="alert alert-danger">
+      <strong> You're on the deletion page, click "Back to List" if you don't want to erase a record</strong>
+  </div>
+    }
+</div>
+    </div>

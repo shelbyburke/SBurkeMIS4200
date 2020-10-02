@@ -1,0 +1,61 @@
+﻿@model SBurkeMIS4200.Models.Salesperson
+
+@{
+    ViewBag.Title = "SalespersonDetails";
+}
+
+<h2>Salesperson Details</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonFirstName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonFirstName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonLastName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonLastName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.salespersonAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.salespersonAddress)
+        </dd>
+
+    </dl>
+</div>
+
+<div class="alert alert-info">
+    <strong>Changing the details of the Salesperson can be done with the edit function below</strong>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.salespersonId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

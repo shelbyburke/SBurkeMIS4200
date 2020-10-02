@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "Shelby's Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MIS4200 MVC Project</h1>
+    <p class="lead">MIS4200 class at Ohio University</p>
+    <p><a href="https://cob.ohio.edu" class="btn btn-primary btn-lg">College of Business</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Management Information System</h2>
+        <p>
+            MIS professionals play a strategic role in all businesses through analyzing and integrating people, process, and information technology.
+            Personally, I have gained an immense amount of knowledge throughout my time at Ohio University.
+            From various different consulting projects to technical skills in different softwares, Ohio University prepares students
+            for their internships and other outside experiences that they can take with them once they graduate.
+            In addition, I have used my MIS background to integrate my skills into a previous internship a few summers ago. 
+            <br />
+            <br />
+            Example pages for MIS 4200:
+            <br />
+            @Html.ActionLink("Customers", "Index", "Customers")
+            <br />
+            @Html.ActionLink("OrderDetails", "Index", "OrderDetails")
+            <br />
+            @Html.ActionLink("Orders", "Index", "Orders")
+
+        </p>
+        <p><a class="btn btn-default" href="https://business.ohio.edu/academics/undergrad-majors/management-information-systems/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Business Analytics</h2>
+        <div></div>
+        <p>
+            Ohio University’s Business Analytics Major helps students to develop skills and competencies
+            in business analytics and provides them with hands-on experience of statistical tools used in the business environment using data provided by industry partners.
+            Personally, I have used my analytics degree for my internship with an Agriculture company this past summer.
+        </p>
+        SD3 Assignment pages for:
+        <br />
+        <a href="~/Salespersons" class="btn btn-primary btn-group-sm">Salesperson</a>
+        <br />
+        <a href="~/CustomerCars" class="btn btn-primary btn-group-sm">CustomerCars</a>
+        <br />
+        <a href="~/Cars" class="btn btn-primary btn-group-sm">Cars</a>
+        <p><a class="btn btn-default" href="https://business.ohio.edu/academics/undergrad-majors/business-analytics/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Information Systems and Analytics Professionals</h2>
+        <p>ISAP is a student-run organization geared toward MIS and Business Analytics majors within Ohio University's College of Business.
+           Throughout my time at Ohio University, I have attended many ISAP meetings to engage in conversations about new technological advances, as well as network with industry professionals.</p>
+        <p><a class="btn btn-default" href="https://ouisap.com/">Learn more &raquo;</a></p>
+    </div>
+</div>
